@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" width=device-width, initial-scale="1.0">
+        <title>Lars Tornøe</title>
+        <link rel="icon" type="image/x-icon" href="imagenes/icon.png">
+    </head>
+
+    <style>
+
+        *  {
+            margin: 4px;
+            }
+
+            html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            }
+
+            .contenedor-img{
+                position: relative;
+                }
+
+
+                .bloque{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 400px;
+                width: 100%;
+                opacity: 0;
+                transition: .3s ease;
+                background-color:#fffab9dc;
+                }
+
+                .titulo{
+                color: #333;
+                font-size: 20px;
+                font-weight: bold;
+                position: absolute;
+                top: 80%;
+                left: 18%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                }
+
+                .contenedor-img:hover .bloque{
+                opacity: 1;
+                }
+
+            @media (max-width: 763px){
+
+                *{
+                    margin: 0;
+                }
+
+                .imagen-grande{
+                    width: 175%;
+                    height: 400px;
+                    object-fit: cover;
+                   
+                }
+
+                .imagen-grande-1{
+                    width: 175%;
+                    height: 400px;
+                    object-fit: cover;
+                    
+                }
+
+                .imagen-grande-2{
+                    width: 175%;
+                    height: 400px;
+                    object-fit: cover;
+           
+                }
+                    
+                .bloque{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                transition: .3s ease;
+                background-color:#fffab9d8;
+              
+                
+                    width: 175%;
+                  height: 400px;
+                }
+
+                .columnas{
+                display: grid;
+                width: 105%;
+                }
+
+
+                .column-left {
+                width: 50%;
+                float: left;
+                }
+
+                .column-right{
+
+                    float: right;
+                }
+
+                
+            }
+
+            body {
+            background-color: #fff;
+            color: #333;
+            overflow-x: hidden;
+            overflow-y: auto;
+            }
+
+            body a {
+            color: #333;
+            text-decoration: none
+            }
+
+
+            .main {
+            display: flex;
+            }
+
+            .columnas{
+                display: grid;
+                align-items: center;
+              
+
+            }
+
+
+            .column-left {
+            width: 50%;
+            float:left;
+            padding: 10px;
+            margin: 1rem;
+            }
+
+            .column-right{
+                width: 50%;
+                float: right;
+                padding: 10px;
+                margin:1rem; 
+            }
+
+            
+            img {
+            opacity: 1;
+            }
+           
+          
+            body {
+            line-height: 1.25em;
+            font-family: Arial,Helvetica,sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: .02em;
+            text-decoration: none;
+            }
+
+            :root{
+            --gris:#333; 
+            }
+
+
+            @media (min-width: 764px){
+
+                *{
+                    margin: 0;
+                }
+
+                .imagen-grande {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+
+
+            .imagen-grande-1 {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+               
+            }
+
+            .imagen-grande-2{
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+            
+            .columnas{
+            display: flex;
+            width:100.5%;
+
+         
+
+            }
+
+
+            .alinear {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 1rem;
+            }
+            }
+
+
+            
+            ul{font-size: 17px;
+                    float: right;
+                    padding-top: 3rem;
+                      display: flex;
+                      list-style-type: none;
+                      line-height: 1.25em;
+                  font-family: Arial,Helvetica,sans-serif;
+                  font-weight: 400;
+                  font-style: normal;
+                  letter-spacing: .02em;
+                  }
+
+                  .header_logo {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 20px;
+               padding: 40px;
+            }
+
+            
+            .header nav{  
+              float: right;
+              margin-right: 3rem;
+            }
+
+            nav a{
+                color: #333;
+                text-decoration: none;
+                margin-left: 1rem;
+            }
+            
+
+                  .checkbtn{
+                      font-size: 30px;
+                      color:#333;
+                      float: right;
+                      line-height: 80px;
+                      cursor: pointer;
+                      display: none;
+                  }
+
+                  
+                  nav a:hover{
+                    background-color: #fdffa4c9;
+                    text-decoration: none;
+                  }
+      
+                  #check{
+                      display: none;
+      
+                  }
+ 
+    
+            
+
+            @media (max-width: 764px){
+
+                .header_logo{
+                    padding: 5px;
+                    margin-left: 0;
+                    margin-top:  24px;
+                    position: fixed;
+                    z-index: 1000;
+                    margin-left: 1rem;
+
+                }
+
+            
+      
+                  nav a{
+                      color: #333;    
+                      text-decoration: none; 
+                      margin-right: 0;
+
+                  }
+                  
+                  .checkbtn{
+                      font-size: 30px;
+                      color:#333;
+                      float: right;
+                      line-height: 80px;
+                      cursor: pointer;
+                      display: none;
+                      margin: 0;
+                   
+
+                  }
+                  
+                  nav a:hover{
+                    background-color: #fdffa4c9;
+                    text-decoration: none;
+                    padding: 15px;
+                    display: grid;
+                    line-height:  0;
+                  }
+      
+                  #check{
+                      display: none;
+      
+                  }
+
+                .checkbtn{
+                    display:block;
+                    
+                }
+            
+
+                ul{
+                    z-index: 2 ;
+                    position: fixed;
+                    width: 100%;
+                    height: 92vh;
+                    background: #ffff;
+                    top: 60px;
+                    left: -150%;
+                    text-align: center;
+                    transition: all .4s;
+                    display: inline;
+                    list-style-type: none;
+                    font-family: Arial,Helvetica,sans-serif;
+                  font-weight: 400;
+                  font-style: normal;
+                  letter-spacing: .02em;
+                  padding: unset;
+                }
+
+                nav ul li{
+                    margin: 20px 0;
+                    line-height: 30px;
+                }
+
+                nav ul li a{
+                    font-size: 40px;
+
+                }
+
+                .li-1{
+                    margin-top: 17rem;
+                }
+
+                #check:checked ~ ul{
+                    left:0;
+                }
+
+                .header nav{
+                    margin-right:0;
+                }
+           
+        }
+            
+
+            @media (max-width: 299px){
+
+                *{
+                    margin: 2px;
+                }
+
+                .header_logo{
+                   max-height: 15px;
+                   width: 59%;
+                   margin-top: 25px;
+                }
+
+                .checkbtn{
+                 display: block;
+                }
+            }
+
+
+
+
+            
+    </style>
+
+    <body>       
+        <header class="header">
+    
+            <a href="tienda.lars.html">
+                <img class="header_logo" src="imagenes/LARS_LOGO-removebg-preview.png" alt="Lars Tornøe">
+            </a>
+    
+    
+    
+             <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </label>
+            
+                <ul> 
+                         <li class="li-1"   style="height: 30px;"><a href="tienda.lars.html">Work</a></li>
+                        <li><a href="About-Lars Tornøe.html">About</a></li>
+                </ul> 
+            </nav>           
+                
+    
+            
+    
+        </header> 
+      
+
+        <main>
+                    <div class="columnas">
+                        <div class="column-left">
+            
+                                <div class="contenedor-img">
+                                        <a href="kizu.html">
+                                            <img src="imagenes/kizu.0.png" class="imagen-grande-1" alt="Kizu" >
+                                            <div class="bloque">
+                                                <div class="titulo">Kizu</div>
+                                            </div> 
+            
+                                        </a> 
+                                </div>                
+                                        
+                        </div> 
+
+                                    <div class="column-right">
+                                        <div class="contenedor-img">
+                                            <a href="hex.html">
+                                                <img src="imagenes/hex.1.jpg" class="imagen-grande-2" alt="Kizu" >
+                                                <div class="bloque">
+                                                    <div class="titulo">Hex</div>
+                                                </div> 
+                
+                                            </a> 
+                                        </div>                
+                                    </div>
+                                            
+                    </div>    
+
+
+                            <div class="columnas">
+                                <div class="column-left">
+                                    <div class="contenedor-img">
+                                        <a href="Tind.html">
+                                            <img src="imagenes/tind.1.jpg" alt="Tind" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Tind</div>
+                                            </div> 
+            
+                                        </a> 
+                                    </div>              
+                                </div>
+                                
+                                <div class="column-right">
+                                    <div class="contenedor-img">
+                                        <a href="coil.html">
+                                            <img src="imagenes/coil.1.jpg" alt="Coil" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Coil</div>
+                                            </div> 
+            
+                                        </a> 
+                                    </div>                
+                                </div>
+                            </div>    
+
+                                        
+                            
+                            <div class="columnas">
+                                <div class="column-left"> 
+                                    <div class="contenedor-img">
+                                        <a href="The.Dots.html">
+                                            <img src="imagenes/the.dots.0.jpg" alt="The Dots" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">The Dots</div>
+                                            </div> 
+            
+                                        </a> 
+                                    </div>                
+                                </div>
+                                <div class="column-right">
+                                    <div class="contenedor-img">
+                                        <a href="pinch.html">
+                                            <img src="imagenes/pinch.1.jpg" alt="Pinch" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Pinch</div>
+                                            </div> 
+            
+                                        </a> 
+                                    </div>    
+                                </div>
+                            </div>   
+
+                            
+                            
+                            <div class="columnas">
+                                <div class="column-left">
+                                    <div class="contenedor-img">
+                                        <a href="Stripes.html">
+                                            <img src="imagenes/stripes.perfil.3.jpg" alt="Stripes" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Stripes</div>
+                                            </div> 
+            
+                                        </a> 
+                                    </div>    
+                                </div> 
+                                <div class="column-right">
+                                    <div class="contenedor-img">
+                                        <a href="scoop.html">
+                                            <img src="imagenes/scoop.3.jpg" alt="Scoop" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Scoop</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div>
+                            </div>    
+
+                            
+                            <div class="columnas">
+                                <div class="column-left">
+                                    <div class="contenedor-img">
+                                        <a href="Fjell.html">
+                                            <img src="imagenes/fjell.4.jpg"  alt="Fjell" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Fjell</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+
+                                </div>
+                                <div class="column-right">       
+                                    <div class="contenedor-img">
+                                        <a href="bloc.html">
+                                            <img src="imagenes/bloc.0.png" alt="Bloc" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Bloc</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div>
+                            </div>    
+
+                                
+                            <div class="columnas">
+                                <div class="column-left">
+                                    <div class="contenedor-img">
+                                        <a href="Coon.html">
+                                            <img src="imagenes/coon.1.jpg" alt="Con" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Con</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div>
+                                <div class="column-right">
+                                    <div class="contenedor-img">
+                                        <a href="kvart.html">
+                                            <img src="imagenes/kvart.5.jpg" alt="Kvart" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Kvart</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div>
+                            </div>   
+        
+                        
+                            <div class="columnas">
+                                <div class="column-left">
+                                    <div class="contenedor-img">
+                                        <a href="Clover.html">
+                                            <img src="imagenes/clover.1.jpg" alt="Clover" class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Clover</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div>
+                                <div class="column-right"> 
+                                    <div class="contenedor-img">
+                                        <a href="undring.html">
+                                            <img src="imagenes/undring.1.jpg" alt="Undring" class="imagen-grande">    
+                                            <div class="bloque">
+                                                <div class="titulo">Undring</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div>
+                            </div>
+                                
+
+
+                            <div class="columnas">
+                                <div class="column-left">
+                                    <div class="contenedor-img">
+                                        <a href="Copenhagen.Chair.html">
+                                            <img src="imagenes/copenhagen.2.jpg" alt="Copenhagen Chair" class="imagen-grande">    
+                                            <div class="bloque">
+                                                <div class="titulo">Copenhagen Chair</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div>
+                                <div class="column-right">
+                                    <div class="contenedor-img">
+                                        <a href="corner.html">
+                                            <img src="imagenes/corner.1.jpg" alt="Corner" class="imagen-grande">    
+                                            <div class="bloque">
+                                                <div class="titulo">Corner</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div>
+                            </div>
+
+                                
+                            <div class="columnas">
+                                <div class="column-left">
+                                    <div class="contenedor-img">
+                                        <a href="Clint.html">
+                                            <img src="imagenes/clint.1.jpg" alt="Clint" class="imagen-grande">   
+                                            <div class="bloque">
+                                                <div class="titulo">Clint</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div> 
+                                <div class="column-right">
+                                    <div class="contenedor-img">
+                                        <a href="nunu.html">
+                                            <img src="imagenes/nunu.3.jpg" alt="Nunu" class="imagen-grande">   
+                                            <div class="bloque">
+                                                <div class="titulo">Nunu</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div>
+                            </div>    
+                                
+
+                            <div class="columnas">
+                                <div class="column-left"> 
+                                    <div class="contenedor-img">
+                                        <a href="Myk.html">
+                                            <img src="imagenes/myk.1.jpg" alt="Myk"  class="imagen-grande">
+                                            <div class="bloque">
+                                                <div class="titulo">Myk</div>
+                                            </div> 
+                                        </a> 
+                                    </div>    
+                                </div>
+                                <div class="column-right">
+                                    <div class="contenedor-img">
+                                        <a href="bone.html">
+                                            <img src="imagenes/bone.1.jpg" alt="Bone" class="imagen-grande"> 
+                                            <div class="bloque">
+                                                <div class="titulo">Bone</div>
+                                            </div> 
+                                        </a> 
+                                    </div>       
+                                </div>
+                            </div>    
+            
+               
+
+        </main>     
+
+        
+    </body>
+</html>
